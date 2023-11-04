@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>아이고 졸려 죽겠다</title>
+        <style>
+            .box{
+                width: 100px;height: 100px;
+                position: absolute;
+            }
+            .box:nth-child(1){
+                /*빨-파-초 순으로 겹침*/
+                background-color: red;
+                /*왼쪽으로 움직임*/
+                left: 10px; top: 10px;
+                /*도형 순서 바꿈*/
+                z-index: 100;
+            }
+            .box:nth-child(2){
+                background-color: blue;
+                left: 50px; top: 50px;
+                z-index: 10;
+            }
+            .box:nth-child(3){
+                background-color: green;
+                left: 90px; top: 90px;
+                z-index: 1;
+            }
+            body > div{
+                width: 400px; height: 100px;
+                border: 3px solid black;
+                position: relative;
+                /*hidden은 숨기기 scroll은 스크롤*/
+                overflow: hidden;
+                overflow: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>졸랴 죽곘어요 </h1>
+        <div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <h1>진짜  절려 죽곘아요ㅕ </h1>
+    </body>
+</html>
