@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>one true 레이아웃</title>
+        <style>
+            body{
+                width: 500px;
+                margin: 10px auto;
+            }
+            /*각 행을 독립적으로 구성*/
+            /*#middle{overflow: hidden;}
+            #left{float: left; width: 150px; background: red;}
+            #right{float: right; width: 350px; background: blue;}
+            #top{background: green;}
+            #bottom{background: purple;}*/
+            
+            /*자손 태그에 적당한 너비를 입력*/
+            #middle{display: flex;}
+            #left{width: 150px; background: red;}
+            #right{width: 350px; background: blue;}
+            #top{background: green;}
+            #bottom{background: purple;}
+        </style>
+    </head>
+    <body>
+        <div id="top">Lorem ipsum dolor Consequuntur?</div>
+        <div id="middle">
+            <div id="left">Lorem ipsum dolor tempora.</div>
+            <div id="right">Lorem ipsum dolor explicabo?</div>
+        </div>
+        <div id="bottom">Lorem ipsum dolor esse?</div>
+    </body>
+</html>

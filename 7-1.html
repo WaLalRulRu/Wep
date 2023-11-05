@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>수평 정렬 레이아웃</title>
+        <style>
+            div.center{
+                /*자손이 차지하는 부분의 너비를 모두 감싸 글자가 위아래로 출력 되지만 overflow를 주석처리하면 그냥 옆에 출력*/
+            overflow: hidden;
+        }
+
+        div.item{
+            float: left;
+            margin: 0 3px;
+            padding: 10px;
+            border: 3px solid black;
+        }
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem excepturi illum nihil! Dolore, nesciunt neque incidunt, perspiciatis assumenda architecto corporis deserunt explicabo alias reiciendis quas repellendus dolorem unde doloribus?</p>
+        <div class="center">
+            <div class="item">메뉴 - 1</div>
+            <div class="item">메뉴 - 2</div>
+            <div class="item">메뉴 - 3</div>
+            <div class="item">메뉴 - 4</div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium animi reprehenderit eaque quas perspiciatis veritatis ea possimus, perferendis aut maiores harum optio quam nostrum pariatur eveniet rem nihil delectus doloribus?</p>
+    </body>
+</html>
