@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>멋진 화면 만들기</title>
+        <script>
+            //11월 15자 수업
+            window.onload = function(){
+                let output = '';
+                for(let i=10; i<256; i++){
+                    output += '<div></div>';
+                }
+                document.body.innerHTML = output;
+
+                let divs = document.querySelectorAll('div');
+                for(let i =0; i <divs.length; i++){
+                    let div = divs[i];
+
+                    div.style.height = '2px';
+                    div.style.background = 'rgb('+i+','+i+','+i+')';
+                }
+            };
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

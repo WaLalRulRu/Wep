@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>도큐먼트 오브젝트 모델</title>
+        <script>
+            //2. 이벤트 활용하기
+            window.onload = function(){
+                document.querySelector('h1').style.backgroundColor='red';
+                document.querySelector('h2').style.color='red';
+            }
+        </script>
+    </head>
+    <body>
+        <!--지금 보면 스크립트가 바디 안에 들어가 있는데 이게 왜 이러냐면 이 코드가 돌 때 보디가 실행 되지 않아서 스크립트가 실행이 안됌
+        그래서 스크립트를 보디 안에다 넣어서 실행 시키는데 이걸 가지고 많은 프론트엔드 개발자들이 코드가 안 이쁘다 뭐다 저쩌다로 많이 싸움 얼탱없음;;
+        이거 해결 방법-->
+        <!--1. 스크랩트 태그 위치 바꾸기-->
+        <h1>Process -1</h1>
+        <h2>Process -2</h2>
+        <script>
+           //h1 태그의 배경 색상을 변경합니다  
+           document.querySelector('h1').style.backgroundColor='red';
+           //h2 태그의 글자 색상을 번경합니다.
+           document.querySelector('h2').style.color='red';
+        </script>
+    </body>
+</html>

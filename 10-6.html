@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>문서 객체 1개 선택하기</title>
+        <script>
+            //이벤트를 연결
+            window.onload =function(){
+                //문서 객체를 선택
+                let header = document.getElementById('header');
+
+                //문서 객체를 조작합니다.
+                header.style.color = 'orange';
+                header.style.background = 'red';
+                header.innerHTML = 'From JavaScript';
+                //근데 백그라운드랑 백그라운드 컬러랑 뭐가 다른겨?: background-color 즉 색깔만 지정, background는 color 이외의 다른 background 옵션들까지 지정.
+            };
+        </script>
+    </head>
+    <body>
+        <h1 id="header">헤더</h1>
+    </body>
+</html>
