@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>이벤트 저지</title>
+        <script>
+            //이벤트 연결
+            window.onload = function () {
+                
+                //1초마다 함수 실행
+                let button = document.getElementById('button');
+                
+                //이벤트 연결
+                button.onclick = function () {
+                    /*리턴 true 면 버튼을 누를 시 웹 페이지로 이동 
+                    리턴 flasr면 웹페이지 이동 안됌 원래 안되는게 맞는거ㅇㅇ */
+                    return false;
+                };
+            };
+        </script>
+    </head>
+    <body>
+        <a id="button" href="https://www.naver.com/">버튼</a>
+    </body>
+</html>

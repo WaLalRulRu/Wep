@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>이미지 태그를 활용한 문서 객체 생성</title>
+        <script>
+            window.onload = function (){
+                //변수 선언
+                let image = document.getElementById('image');
+
+                //속성 변환
+                image.src = 'http://via.placeholder.com/300x200';
+                image.Width = 300;
+                image.height = 200;
+            };
+        </script>
+    </head>
+    <body>
+        <img id="image">
+    </body>
+</html>
