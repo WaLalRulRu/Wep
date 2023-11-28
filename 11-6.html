@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>함수를 이용해 속성 지정하기</title>
+        <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img').attr({
+                    alt: '뭐라는건지',
+                    src: function (index) {
+                        let size = (index + 1) * 100;
+
+                        //반환
+                        return 'http://via.placeholder.com/' + size + 'x100'
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

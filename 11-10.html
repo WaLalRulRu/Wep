@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>함수를 이용해 스타일 속성 지정하기</title>
+        <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+        <script>
+            $(document).ready (function (){
+                let output = '';
+                for(let i = 0; i < 256; i++){
+                    output += '<div></div>';
+                }
+                document.body.innerHTML = output;
+
+                //스타일 적용
+                $('div').css({
+                    height: 2,
+                    backgroundColor: function(i){
+                        return 'rgb(' + i + ',' + i + ',' + i +')';
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
